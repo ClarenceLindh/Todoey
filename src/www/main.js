@@ -76,7 +76,7 @@ function renderItems(){
 
 async function createItem(){
     let item = {
-        title: "Test"
+        title: "Test4"
     }
 
     let result = await fetch ("/rest/items",{
@@ -84,4 +84,5 @@ async function createItem(){
         body: JSON.stringify(item)
     });
     console.log(await result.text());
+    getItems();
 }

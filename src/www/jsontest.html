@@ -5,26 +5,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body onload="getItems()">
     <div id="myDIV" class="header">
         <h2 style="margin:5px">List Of Shit To Do</h2>
         <input type="text" id="myInput" placeholder="Type stuff...">
         <span onclick="newElement()" class="addBtn">Add!</span>
       </div>
-    <ul id="myUL">
-        <li class="checked">Look at list</li>
-        <li>Do stuff</li>
-        <li>Do some more stuff</li>
-        <li>Do even more stuff</li>
-        <li>Stop doing stuff</li>
-        <li>Chill bruv</li>
+    <ul id="item-list">
       </ul>
 
-      <button onclick="getItems()">Get Items</button>
+      
       <button onclick="createItem()">Create Item</button>
 
       <ul id="item-list"></ul>
 
-    <script src="/main.js"></script>
+    <script src="/main.js">
+    </script>
 </body>
 </html>
